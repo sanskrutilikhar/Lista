@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Connected</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: #aaa;
+            font-family: Arial, sans-serif;
+            height: auto; /* Allow the body to grow with content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: auto; /* Allow container to grow with content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack content vertically */
+        }
+
+        .text {
+            text-align: center;
+            font-size: 1.9em;
+            line-height: 0.8;
+            width: 50%;
+            z-index: 1;
+            margin-bottom: 20px; /* Ensure spacing from bubbles */
+        }
+
+        .bubble-container {
+            display: flex;
+            flex-wrap: wrap; /* Wrap to the next line if necessary */
+            gap: 10px; /* Space between bubbles */
+            justify-content: center; /* Center-align bubbles */
+        }
+
+        .message {
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+
+        .message img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .blue { background-color: #70c4f0; color: white; }
+        .purple { background-color: #b399ff; color: white; }
+        .brown { background-color: #c69f94; color: white; }
+        .pink { background-color: #f1a0d1; color: white; }
+        .grey { background-color: #666; color: white; }
+
+        /* Original positioning for desktop */
+        @media (min-width: 1025px) {
+            .bubble-container {
+                position: relative;
+            }
+
+            .message {
+                position: absolute;
+            }
+
+            .msg1 { top: -5%; left: 27%; }
+            .msg2 { top: -5%; right: 27%; }
+            .msg3 { bottom: 25%; left: 15%; }
+            .msg4 { bottom: 25%; right: 13%; }
+            .msg5 { top: 30%; left: 8%; }
+            .msg6 { top: 35%; right: 10%; }
+            .msg7 { bottom: -5%; left: 50%; transform: translateX(-50%); }
+        }
+
+        /* Tablet (1024px and below): Align bubbles side by side */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .text {
+                width: 90%;
+            }
+
+            .message {
+                position: static;
+                margin: 0;
+            }
+        }
+
+        /* Mobile (768px and below): Ensure bubbles fit neatly */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .text {
+                font-size: 1.5em;
+            }
+
+            .bubble-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .message {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>Stay connected with anyone, whether</p> 
+            <p>they're near or far, by sharing, discovering,</p>
+            <p>and bonding over music that brings you</p>
+            <p>closer together no matter the distance.</p>
+        </div>
+        
+        <div class="message blue msg1"><img src="profile1.png" alt="Random Image 1">Ciao!</div>
+        <div class="message purple msg2"><img src="profile2.png" alt="Random Image 2">Hello! How are you?</div>
+        <div class="message brown msg3"><img src="profile3.png" alt="Random Image 3">Good day!</div>
+        <div class="message pink msg4"><img src="profile4.png" alt="Random Image 4">Can we meet?</div>
+        <div class="message grey msg5"><img src="profile1.png" alt="Random Image 5">Today's the deadline</div>
+        <div class="message blue msg6"><img src="profile2.png" alt="Random Image 6">Thank you!</div>
+        <div class="message blue msg7"><img src="profile3.png" alt="Random Image 7">How you doin'!</div>
+    </div>
+
+    <!-- Left Arrow -->
+    <a href="page3.html" class="side-arrow left-arrow">&#8592;</a>
+    
+    <!-- Right Arrow -->
+    <a href="page5.html" class="side-arrow right-arrow">&#8594;</a>
+</body>
+<script src="animation.js"></script>
+</html>

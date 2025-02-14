@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Team</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+    margin: 0px;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+header {
+    font-family: 'Segoe Script';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+    h1 {
+      color: white;
+      font-family: 'Arial', sans-serif;
+      margin-bottom: 100px;
+      margin-top: 105px;
+      font-size: 40px;
+    }
+
+    .team {
+      display: flex;
+      gap: 125px;
+    }
+
+    .member {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .image-placeholder1 {
+      width: 170px;
+      height: 170px;
+      background-image: url('sujal.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin-bottom: 15px;
+      border: #000;
+    }
+    .image-placeholder2 {
+      width: 170px;
+      height: 170px;
+      background-image: url('sanskruti.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin-bottom: 15px;
+      border: #000;
+    }
+    .image-placeholder3 {
+      width: 170px;
+      height: 170px;
+      background-image: url('jaanvi.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin-bottom: 15px;
+      border:#000;
+    }
+
+    .square-placeholder {
+      width: 170px;
+      height: 60px;
+      background-color: #4682B4;
+      margin-top: 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      border: #000;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 24px;
+    }
+    footer {
+      background-color: #222;
+      padding: 20px;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+
+    footer nav a {
+      color: #aaa;
+      margin: 0 15px;
+      font-size: 17px;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 0.1px;
+    }
+
+    .social-icons img {
+      height: 50px;
+      cursor: pointer;
+    }
+    @media (max-width:490px){
+      header{
+        font-size: 12px;
+      }
+      h1{
+        font-size: 20px;
+        margin-left: -110px;
+        margin-bottom: -30px;
+        margin-top: 55px;
+      }
+      .team{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -50px;
+        margin-top: 55px;
+      }
+      .member{
+        display: flex;
+        flex-direction: column;
+      }
+      .image-placeholder1,
+      .image-placeholder2,
+      .image-placeholder3 {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin-top: 15px;
+      border: #000;
+    }
+    .square-placeholder {
+      width: 135px;
+      height: 50px;
+      background-color: #4682B4;
+      margin-top: 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      border: #000;
+    }
+    }
+  @media (max-width:1440px){
+    header{
+        font-size: 20px;
+      }
+      h1{
+        font-size: 20px;
+        margin-left: -110px;
+        margin-bottom: -30px;
+        margin-top: 55px;
+      }
+      .team{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -50px;
+        margin-top: 55px;
+      }
+      .member{
+        display: flex;
+        flex-direction: column;
+      }
+      .image-placeholder1,
+      .image-placeholder2,
+      .image-placeholder3 {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin-top: 15px;
+      border: #000;
+    }
+    .square-placeholder {
+      width: 135px;
+      height: 50px;
+      background-color: #4682B4;
+      margin-top: 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      border: #000;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>Lista</header>
+  <h1>Support Team</h1>
+  <div class="team">
+    <div class="member">
+      <div class="image-placeholder1"></div>
+      <div class="square-placeholder">Mr.Sujal Gondane</div>
+    </div>
+    <div class="member">
+      <div class="image-placeholder2"></div>
+      <div class="square-placeholder">Ms.Sanskruti Likhar</div>
+    </div>
+    <div class="member">
+      <div class="image-placeholder3"></div>
+      <div class="square-placeholder">Ms.Jaanvi Rajput</div>
+    </div>
+  </div>
+  <footer>
+    <nav>
+      <a href="pricing.html">Price</a>
+      <a href="index.html">About</a>
+      <a href="Support.html">Support</a>
+      <a href="page3.html">Features</a>
+      <a href="page5.html">Stickers</a>
+    </nav>
+    <div class="social-icons">
+      <a href="page2.html"><img src="emailicon.png" alt="Email"></a>
+      <a href="#"><img src="telegramicon.png" alt="Telegram"></a>
+    </div>
+  </footer>
+  <a href="page7.html" class="side-arrow left-arrow">&#8592;</a>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Open Sans", serif;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signup-container {
+    text-align: center;
+    background: #000000;
+    border-radius: 8px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+
+.logo {
+    font-family: "segoe script", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #fff;
+    margin: 0 10px;
+}
+
+.divider p {
+    margin: 0;
+}
+
+
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #bbb;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ddd;
+}
+
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.login-link a {
+    color: #74C0FC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

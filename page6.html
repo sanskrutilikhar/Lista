@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Testimonials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+        }
+
+        .header {
+            margin: 30px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            line-height: 0.5;
+        }
+
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .testimonial-card {
+            background-color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            width: 90%;
+            max-width: 350px;
+            text-align: left;
+        }
+
+        .testimonial-card .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card .testimonial-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .testimonial-card .testimonial-header h3 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .testimonial-card .testimonial-content {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 768px){
+            .testimonials {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .testimonial-card {
+                width: 45%;
+            }
+            .side-arrow {
+                position: fixed;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 2em;
+                text-decoration: none;
+                color: #fff;
+                z-index: 1000;
+            }
+            .right-arrow{
+               margin-right: 5px;
+               top:50%
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .testimonial-card {
+                width: 30%;
+            }
+            .side-arrow {
+                position: fixed;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 2em;
+                text-decoration: none;
+                color: #fff;
+                z-index: 1000;
+            }
+            .right-arrow{
+                margin-right: 5px;
+                top:50%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>We’re the talk of </h1>
+        <h1>thousands of users</h1>
+    </div>
+    <div class="testimonials">
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <img src="profile1.png" alt="User Image">
+                <h3>Harry Potter</h3>
+            </div>
+            <div class="testimonial-content">
+                This app has completely transformed the way I stay in touch with my friends. The interface is so intuitive, and the features make every conversation more fun and engaging!
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <img src="profile2.png" alt="User Image">
+                <h3>Adam Evans</h3>
+            </div>
+            <div class="testimonial-content">
+                I love how seamless it is to connect with people, even across long distances. The voice and video quality are outstanding, and the group chat options are a game-changer!
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <img src="profile3.png" alt="User Image">
+                <h3>Angelica Rust</h3>
+            </div>
+            <div class="testimonial-content">
+                The app's design is clean and user-friendly. I especially enjoy the integration with music and other media—it feels like a one-stop shop for all my communication needs.
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <img src="profile4.png" alt="User Image">
+                <h3>Zayn Sharif</h3>
+            </div>
+            <div class="testimonial-content">
+                What sets this messaging app apart is its reliability and the cool features like customizable themes. It’s the perfect way to stay connected with friends and family.
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <img src="profile3.png" alt="User Image">
+                <h3>Alan Berry</h3>
+            </div>
+            <div class="testimonial-content">
+                The messaging app makes staying connected effortless, whether with close friends or distant family. Its features, like instant sharing and seamless calls, truly redefine communication.
+            </div>
+        </div>
+    </div>
+     <!-- Left Arrow -->
+     <a href="page5.html" class="side-arrow left-arrow">&#8592;</a>
+    
+     <!-- Right Arrow -->
+     <a href="page7.html" class="side-arrow right-arrow">&#8594;</a>
+</body>
+<script src="animation.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,887 @@
+body {
+    margin: 0px;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+header {
+    font-family: 'Segoe Script';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.top-right .menu {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url('menu\ icon.png') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons img {
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.random-images img {
+    position: absolute;
+}
+.phone img{
+  width: 240px;
+  height: 270px;
+}
+
+/* Random positions for each image */
+.image1 {
+    top: 40%;
+    left: 20%;
+    width: 140px;
+    height: auto;
+}
+
+.image2 {
+    top: 65%;
+    left: 10%;
+}
+
+.image3 {
+    top: 80%;
+    left: 20%;
+}
+
+.image4 {
+    top: 50%;
+    left: 75%;
+
+}
+
+.image5 {
+    top: 75%;
+    left: 70%;
+    width: 120 px;
+    height: auto;
+}
+.side-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(205, 200, 200, 0.5);
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+/* Left arrow specific styling */
+.left-arrow {
+    left: 20px;
+}
+
+/* Right arrow specific styling */
+.right-arrow {
+    right: 20px;
+}
+
+/* Hover effect */
+.side-arrow:hover {
+    background: rgba(80, 80, 80, 0.7);
+}
+@keyframes wipe {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.wipe-animation {
+  animation: wipe 1s ease-out forwards;
+}
+
+
+
+
+@media(max-width:425px){
+    body {
+        margin: 0px;
+        font-family: 'Arial', sans-serif;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    header {
+        font-family: 'Segoe Script';
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    .top-right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 15px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .top-right .menu {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        background: url('menu\ icon.png') no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+    }
+    
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .container h1 {
+        font-size: 3em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+    
+    .container p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        color: #aaa;
+    }
+    
+    .buttons {
+        margin: 20px 0;
+    }
+    
+    .buttons img {
+        height: 50px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    
+    .random-images img {
+        position: absolute;
+    }
+    .phone img{
+      width: 240px;
+      height: 270px;
+    }
+    
+    /* Random positions for each image */
+    .image1 {
+        top: 40%;
+        left: 20%;
+        width: 140px;
+        height: auto;
+    }
+    
+    .image2 {
+        top: 65%;
+        left: 10%;
+    }
+    
+    .image3 {
+        top: 80%;
+        left: 20%;
+    }
+    
+    .image4 {
+        top: 50%;
+        left: 75%;
+    
+    }
+    
+    .image5 {
+        top: 75%;
+        left: 70%;
+        width: 120 px;
+        height: auto;
+    }
+    .side-arrow {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 36px;
+        color: white;
+        text-decoration: none;
+        background-color: rgba(205, 200, 200, 0.5);
+        padding: 15px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transition: background 0.3s;
+    }
+    
+    /* Left arrow specific styling */
+    .left-arrow {
+        left: 20px;
+    }
+    
+    /* Right arrow specific styling */
+    .right-arrow {
+        right: 20px;
+    }
+    
+    /* Hover effect */
+    .side-arrow:hover {
+        background: rgba(80, 80, 80, 0.7);
+    }
+    @keyframes wipe {
+      0% {
+        clip-path: inset(0 100% 0 0);
+      }
+      100% {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+    
+    .wipe-animation {
+      animation: wipe 1s ease-out forwards;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For devices with width up to 320px (small phones) */
+@media screen and (max-width: 320px) {
+    body {
+      margin: 0px;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+  }
+  header {
+      font-family: 'Segoe Script';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .top-right {
+    top: 10px;
+    right: 30px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .btn {
+    padding: 8px 25px;
+    font-size: 0.8rem;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .top-right .menu {
+  width: 35px;
+  height: 35px;
+  margin-top: -43px;
+  margin-right: -135px;
+  display: inline-block;
+  background: url('menu\ icon.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  }
+  
+  .container {
+    padding: 10px;
+    width: 100%;
+    margin-top: -180px;
+  }
+  
+  .container h1 {
+    font-size: 2em;
+    line-height: 1.3;
+  }
+  
+  .container p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .buttons img{
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .random-images img {
+    position: absolute;
+  }
+  
+  .image1{
+    width: 125px;
+    height: auto;
+    left: 100px; /* Ensures images adjust positioning */
+  }
+  .image2 {
+  width: 140px;
+  height: auto;
+  left: 110px; /* Ensures images adjust positioning */
+  }
+  .image3{
+  width: 115px;
+  height: auto;
+  left: 145px; /* Ensures images adjust positioning */
+  }
+  .image4{
+  width: 150px;
+  height: auto;
+  left: 70%;
+  top: 40%;
+  }
+  .image5 {
+  width: 180px;
+  height: auto;
+  right: auto; /* Ensures images adjust positioning */
+  }
+  .phone img {
+    width: 260px;
+    height: 300px;
+    margin-top: 85px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .left-image, .right-image {
+    flex: 1;
+    margin: 0;
+    max-width: 100%; /* Ensure images don't overflow */
+  }
+  
+  .side-arrow {
+    font-size: 28px;
+    padding: 10px;
+    top: 50%; /* Adjust arrow position for smaller viewports */
+  }
+  .right-arrow{
+  right: 55px;
+  }
+  
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  
+  .image-container img {
+    border-radius: 20px; /* Less rounded corners for smaller screens */
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  }
+  
+  /* For devices with width up to 375px (iPhone X size) */
+  @media screen and (max-width: 375px) {
+    body {
+      margin: 0px;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+  }
+  header {
+      font-family: 'Segoe Script';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .top-right {
+    top: 10px;
+    right: 30px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .btn {
+    padding: 8px 25px;
+    font-size: 0.8rem;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .top-right .menu {
+  width: 35px;
+  height: 35px;
+  margin-top: -43px;
+  margin-right: -135px;
+  display: inline-block;
+  background: url('menu\ icon.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  }
+  
+  .container {
+    padding: 10px;
+    width: 100%;
+    margin-top: -180px;
+  }
+  
+  .container h1 {
+    font-size: 2em;
+    line-height: 1.3;
+  }
+  
+  .container p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .buttons img{
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .random-images img {
+    position: absolute;
+  }
+  
+  .image1{
+    width: 125px;
+    height: auto;
+    left: 100px; /* Ensures images adjust positioning */
+  }
+  .image2 {
+  width: 140px;
+  height: auto;
+  left: 110px; /* Ensures images adjust positioning */
+  }
+  .image3{
+  width: 115px;
+  height: auto;
+  left: 145px; /* Ensures images adjust positioning */
+  }
+  .image4{
+  width: 150px;
+  height: auto;
+  left: 70%;
+  top: 40%;
+  }
+  .image5 {
+  width: 180px;
+  height: auto;
+  right: auto; /* Ensures images adjust positioning */
+  }
+  .phone img {
+    width: 260px;
+    height: 300px;
+    margin-top: 85px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .left-image, .right-image {
+    flex: 1;
+    margin: 0;
+    max-width: 100%; /* Ensure images don't overflow */
+  }
+  
+  .side-arrow {
+    font-size: 28px;
+    padding: 10px;
+    top: 50%; /* Adjust arrow position for smaller viewports */
+  }
+  .right-arrow{
+  right: 55px;
+  }
+  
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  
+  .image-container img {
+    border-radius: 20px; /* Less rounded corners for smaller screens */
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For devices with width up to 425px (large phones) */
+@media(max-width: 425px) {
+    body {
+      margin: 0px;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+  }
+  header {
+      font-family: 'Segoe Script';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .top-right {
+    top: 10px;
+    right: -55px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .btn {
+    padding: 8px 25px;
+    font-size: 0.8rem;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .top-right .menu {
+  width: 35px;
+  height: 35px;
+  margin-top: -43px;
+  margin-right: -135px;
+  display: inline-block;
+  background: url('menu\ icon.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  }
+  
+  .container {
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .container h1 {
+    font-size: 2em;
+    margin-left: 60px;
+    line-height: 1.3;
+  }
+  
+  .container p {
+    font-size: 1em;
+    margin-left: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .buttons img{
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .random-images img {
+    position: absolute;
+  }
+  
+  .image1{
+    width: 125px;
+    height: auto;
+    top: 50%;
+    left: 60px; /* Ensures images adjust positioning */
+  }
+  .image2 {
+  width: 140px;
+  height: auto;
+  left: 5px; 
+  top: auto;/* Ensures images adjust positioning */
+  }
+  .image3{
+  width: 70px;
+  height: auto;
+  left: 170px;
+  top: auto; /* Ensures images adjust positioning */
+  }
+  .image4{
+  width: 150px;
+  height: auto;
+  left: 70%;
+  top: 50%;
+  }
+  .image5 {
+  width: 95px;
+  height: auto;
+  left: 85%;
+  top: 105%; /* Ensures images adjust positioning */
+  }
+  .phone img {
+    width: 260px;
+    height: 300px;
+    margin-top: 85px;
+    margin-left: 75px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .left-image, .right-image {
+    flex: 1;
+    margin: 0;
+    max-width: 100%; /* Ensure images don't overflow */
+  }
+  
+  .side-arrow {
+    font-size: 28px;
+    padding: 10px;
+    top: 50%; /* Adjust arrow position for smaller viewports */
+  }
+  .right-arrow{
+  right: 15px;
+  top: 55%;
+  }
+  
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  
+  .image-container img {
+    border-radius: 20px; /* Less rounded corners for smaller screens */
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  }
+  
+  /* For devices with width up to 768px (tablets and small screens) 
+  @media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        font-size: 28px;
+    }
+    .container h1 {
+        font-size: 3em;
+    }
+    .buttons img {
+        height: 50px;
+    }
+    .phone img {
+        width: 260px;
+        height: 300px;
+    }
+    .side-arrow {
+        font-size: 32px;
+        padding: 12px;
+    }
+  }*/
